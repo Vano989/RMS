@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C230825-1C2C-4742-A2CA-25DDF7E45BA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RMS___RESTAURANT_MANAGEMENT_SYSTEM_1</RootNamespace>
+    <AssemblyName>RMS - RESTAURANT MANAGEMENT SYSTEM 1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\iva\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>C:\Users\iva\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTemplate.Designer.cs">
+      <DependentUpon>addTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Model\formCategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formCategoryAdd.Designer.cs">
+      <DependentUpon>formCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formDetailsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formDetailsSettings.Designer.cs">
+      <DependentUpon>formDetailsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formOrders.Designer.cs">
+      <DependentUpon>formOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formOrdersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formOrdersList.Designer.cs">
+      <DependentUpon>formOrdersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formProductAdd.Designer.cs">
+      <DependentUpon>formProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formStaffAdd.Designer.cs">
+      <DependentUpon>formStaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formTableAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formTableAdd.Designer.cs">
+      <DependentUpon>formTableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucOrderKitchen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucOrderKitchen.Designer.cs">
+      <DependentUpon>ucOrderKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlCategories.Designer.cs">
+      <DependentUpon>pnlCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlDashboard.Designer.cs">
+      <DependentUpon>pnlDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlKitchen.Designer.cs">
+      <DependentUpon>pnlKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlPOS.Designer.cs">
+      <DependentUpon>pnlPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlProducts.Designer.cs">
+      <DependentUpon>pnlProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlReports.Designer.cs">
+      <DependentUpon>pnlReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlSettings.Designer.cs">
+      <DependentUpon>pnlSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlStaff.Designer.cs">
+      <DependentUpon>pnlStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlTables.Designer.cs">
+      <DependentUpon>pnlTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\formKitchenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formKitchenView.Designer.cs">
+      <DependentUpon>formKitchenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formProductView.Designer.cs">
+      <DependentUpon>formProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formStaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formStaffView.Designer.cs">
+      <DependentUpon>formStaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formTableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formTableView.Designer.cs">
+      <DependentUpon>formTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCategoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCategoryView.Designer.cs">
+      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewTemplate.Designer.cs">
+      <DependentUpon>viewTemplate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addTemplate.resx">
+      <DependentUpon>addTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formCategoryAdd.resx">
+      <DependentUpon>formCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formDetailsSettings.resx">
+      <DependentUpon>formDetailsSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formOrders.resx">
+      <DependentUpon>formOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formOrdersList.resx">
+      <DependentUpon>formOrdersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formProductAdd.resx">
+      <DependentUpon>formProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formStaffAdd.resx">
+      <DependentUpon>formStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formTableAdd.resx">
+      <DependentUpon>formTableAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucOrderKitchen.resx">
+      <DependentUpon>ucOrderKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlCategories.resx">
+      <DependentUpon>pnlCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlDashboard.resx">
+      <DependentUpon>pnlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlKitchen.resx">
+      <DependentUpon>pnlKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlPOS.resx">
+      <DependentUpon>pnlPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlProducts.resx">
+      <DependentUpon>pnlProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlReports.resx">
+      <DependentUpon>pnlReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlSettings.resx">
+      <DependentUpon>pnlSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlStaff.resx">
+      <DependentUpon>pnlStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlTables.resx">
+      <DependentUpon>pnlTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\formKitchenView.resx">
+      <DependentUpon>formKitchenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formProductView.resx">
+      <DependentUpon>formProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formStaffView.resx">
+      <DependentUpon>formStaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formTableView.resx">
+      <DependentUpon>formTableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCategoryView.resx">
+      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewTemplate.resx">
+      <DependentUpon>viewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
