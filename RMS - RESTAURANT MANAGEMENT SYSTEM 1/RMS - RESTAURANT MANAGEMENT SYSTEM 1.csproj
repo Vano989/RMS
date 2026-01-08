@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,10 +41,81 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>C:\Users\iva\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=10.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.10.0.1\lib\net462\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=10.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.KeyDerivation.10.0.1\lib\net462\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.1\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.10.0.1\lib\net462\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.10.0.1\lib\net462\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.10.0.1\lib\net462\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.10.0.1\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.10.0.1\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Diagnostics, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Diagnostics.10.0.1\lib\net462\Microsoft.Extensions.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Diagnostics.Abstractions, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Diagnostics.Abstractions.10.0.1\lib\net462\Microsoft.Extensions.Diagnostics.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Identity.Core, Version=10.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Identity.Core.10.0.1\lib\net462\Microsoft.Extensions.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.10.0.1\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.10.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.10.0.1\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.ConfigurationExtensions.10.0.1\lib\net462\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=10.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.10.0.1\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.10.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,10 +127,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addTemplate.cs">
+    <Compile Include="Templates\addTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addTemplate.Designer.cs">
+    <Compile Include="Templates\addTemplate.Designer.cs">
       <DependentUpon>addTemplate.cs</DependentUpon>
     </Compile>
     <Compile Include="formLogin.cs">
@@ -72,117 +145,64 @@
     <Compile Include="formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainClass.cs" />
-    <Compile Include="Model\formCategoryAdd.cs">
+    <Compile Include="Core\MainClass.cs" />
+    <Compile Include="Forms\formCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formCategoryAdd.Designer.cs">
+    <Compile Include="Forms\formCategoryAdd.Designer.cs">
       <DependentUpon>formCategoryAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formDetailsSettings.cs">
+    <Compile Include="Forms\formDetailsSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formDetailsSettings.Designer.cs">
+    <Compile Include="Forms\formDetailsSettings.Designer.cs">
       <DependentUpon>formDetailsSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formOrders.cs">
+    <Compile Include="Views\formOrders.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formOrders.Designer.cs">
+    <Compile Include="Views\formOrders.Designer.cs">
       <DependentUpon>formOrders.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formOrdersList.cs">
+    <Compile Include="Forms\formOrdersList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formOrdersList.Designer.cs">
+    <Compile Include="Forms\formOrdersList.Designer.cs">
       <DependentUpon>formOrdersList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formProductAdd.cs">
+    <Compile Include="Forms\formProductAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formProductAdd.Designer.cs">
+    <Compile Include="Forms\formProductAdd.Designer.cs">
       <DependentUpon>formProductAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formStaffAdd.cs">
+    <Compile Include="Forms\formStaffAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formStaffAdd.Designer.cs">
+    <Compile Include="Forms\formStaffAdd.Designer.cs">
       <DependentUpon>formStaffAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\formTableAdd.cs">
+    <Compile Include="Forms\formTableAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\formTableAdd.Designer.cs">
+    <Compile Include="Forms\formTableAdd.Designer.cs">
       <DependentUpon>formTableAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\ucOrderKitchen.cs">
+    <Compile Include="Controls\ucOrderKitchen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\ucOrderKitchen.Designer.cs">
+    <Compile Include="Controls\ucOrderKitchen.Designer.cs">
       <DependentUpon>ucOrderKitchen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\ucProduct.cs">
+    <Compile Include="Controls\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\ucProduct.Designer.cs">
+    <Compile Include="Controls\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlCategories.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlCategories.Designer.cs">
-      <DependentUpon>pnlCategories.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlDashboard.Designer.cs">
-      <DependentUpon>pnlDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlKitchen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlKitchen.Designer.cs">
-      <DependentUpon>pnlKitchen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlPOS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlPOS.Designer.cs">
-      <DependentUpon>pnlPOS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlProducts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlProducts.Designer.cs">
-      <DependentUpon>pnlProducts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlReports.Designer.cs">
-      <DependentUpon>pnlReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlSettings.Designer.cs">
-      <DependentUpon>pnlSettings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlStaff.Designer.cs">
-      <DependentUpon>pnlStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pnlTables.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pnlTables.Designer.cs">
-      <DependentUpon>pnlTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\userService.cs" />
     <Compile Include="Views\formKitchenView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,13 +233,13 @@
     <Compile Include="Views\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
-    <Compile Include="viewTemplate.cs">
+    <Compile Include="Templates\viewTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viewTemplate.Designer.cs">
+    <Compile Include="Templates\viewTemplate.Designer.cs">
       <DependentUpon>viewTemplate.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="addTemplate.resx">
+    <EmbeddedResource Include="Templates\addTemplate.resx">
       <DependentUpon>addTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
@@ -228,59 +248,32 @@
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formCategoryAdd.resx">
+    <EmbeddedResource Include="Forms\formCategoryAdd.resx">
       <DependentUpon>formCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formDetailsSettings.resx">
+    <EmbeddedResource Include="Forms\formDetailsSettings.resx">
       <DependentUpon>formDetailsSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formOrders.resx">
+    <EmbeddedResource Include="Views\formOrders.resx">
       <DependentUpon>formOrders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formOrdersList.resx">
+    <EmbeddedResource Include="Forms\formOrdersList.resx">
       <DependentUpon>formOrdersList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formProductAdd.resx">
+    <EmbeddedResource Include="Forms\formProductAdd.resx">
       <DependentUpon>formProductAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formStaffAdd.resx">
+    <EmbeddedResource Include="Forms\formStaffAdd.resx">
       <DependentUpon>formStaffAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\formTableAdd.resx">
+    <EmbeddedResource Include="Forms\formTableAdd.resx">
       <DependentUpon>formTableAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\ucOrderKitchen.resx">
+    <EmbeddedResource Include="Controls\ucOrderKitchen.resx">
       <DependentUpon>ucOrderKitchen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\ucProduct.resx">
+    <EmbeddedResource Include="Controls\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlCategories.resx">
-      <DependentUpon>pnlCategories.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlDashboard.resx">
-      <DependentUpon>pnlDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlKitchen.resx">
-      <DependentUpon>pnlKitchen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlPOS.resx">
-      <DependentUpon>pnlPOS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlProducts.resx">
-      <DependentUpon>pnlProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlReports.resx">
-      <DependentUpon>pnlReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlSettings.resx">
-      <DependentUpon>pnlSettings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlStaff.resx">
-      <DependentUpon>pnlStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pnlTables.resx">
-      <DependentUpon>pnlTables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -307,9 +300,10 @@
     <EmbeddedResource Include="Views\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viewTemplate.resx">
+    <EmbeddedResource Include="Templates\viewTemplate.resx">
       <DependentUpon>viewTemplate.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -338,5 +332,28 @@
   <ItemGroup>
     <None Include="Resources\exit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
+  </Target>
 </Project>

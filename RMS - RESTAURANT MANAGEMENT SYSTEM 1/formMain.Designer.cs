@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReports = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnLogOut = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnKitchen = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.btnPOS = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnProducts = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnStaff = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnTables = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -40,6 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelUsername = new System.Windows.Forms.Label();
             this.mPanel = new System.Windows.Forms.Panel();
+            this.btnOrders = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,10 +47,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.panel1.Controls.Add(this.btnReports);
+            this.panel1.Controls.Add(this.btnOrders);
+            this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnKitchen);
             this.panel1.Controls.Add(this.kryptonLabel1);
-            this.panel1.Controls.Add(this.btnPOS);
             this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Controls.Add(this.btnStaff);
             this.panel1.Controls.Add(this.btnTables);
@@ -58,84 +58,85 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 827);
+            this.panel1.Size = new System.Drawing.Size(228, 678);
             this.panel1.TabIndex = 0;
             // 
-            // btnReports
+            // btnLogOut
             // 
-            this.btnReports.Location = new System.Drawing.Point(49, 415);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogOut.Location = new System.Drawing.Point(51, 583);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.OverrideDefault.Border.Rounding = 0;
-            this.btnReports.OverrideDefault.Border.Width = 0;
-            this.btnReports.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReports.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReports.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnReports.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.OverrideDefault.Border.Rounding = 0;
+            this.btnLogOut.OverrideDefault.Border.Width = 0;
+            this.btnLogOut.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnLogOut.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.OverrideFocus.Border.Rounding = 0;
-            this.btnReports.OverrideFocus.Border.Width = 0;
-            this.btnReports.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReports.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReports.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnReports.Size = new System.Drawing.Size(179, 32);
-            this.btnReports.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnReports.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnReports.StateCommon.Back.ColorAngle = 0F;
-            this.btnReports.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.OverrideFocus.Border.Rounding = 0;
+            this.btnLogOut.OverrideFocus.Border.Width = 0;
+            this.btnLogOut.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnLogOut.Size = new System.Drawing.Size(125, 53);
+            this.btnLogOut.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateCommon.Back.ColorAngle = 0F;
+            this.btnLogOut.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.StateCommon.Border.Rounding = 0;
-            this.btnReports.StateCommon.Border.Width = 0;
-            this.btnReports.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReports.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReports.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnReports.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnReports.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnReports.StateNormal.Border.ColorAngle = 0F;
-            this.btnReports.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.StateCommon.Border.Rounding = 0;
+            this.btnLogOut.StateCommon.Border.Width = 0;
+            this.btnLogOut.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnLogOut.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StateNormal.Border.ColorAngle = 0F;
+            this.btnLogOut.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.StateNormal.Border.Rounding = 0;
-            this.btnReports.StateNormal.Border.Width = 0;
-            this.btnReports.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReports.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReports.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnReports.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnReports.StatePressed.Border.ColorAngle = 0F;
-            this.btnReports.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.StateNormal.Border.Rounding = 0;
+            this.btnLogOut.StateNormal.Border.Width = 0;
+            this.btnLogOut.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnLogOut.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.btnLogOut.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnLogOut.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnLogOut.StatePressed.Border.ColorAngle = 0F;
+            this.btnLogOut.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.StatePressed.Border.Rounding = 0;
-            this.btnReports.StatePressed.Border.Width = 0;
-            this.btnReports.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReports.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReports.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnReports.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.btnReports.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.btnReports.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogOut.StatePressed.Border.Rounding = 0;
+            this.btnLogOut.StatePressed.Border.Width = 0;
+            this.btnLogOut.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnLogOut.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnLogOut.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnLogOut.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.btnLogOut.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.btnLogOut.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReports.StateTracking.Border.Rounding = 0;
-            this.btnReports.StateTracking.Border.Width = 0;
-            this.btnReports.TabIndex = 15;
-            this.btnReports.Values.Text = "Reports";
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            this.btnLogOut.StateTracking.Border.Rounding = 0;
+            this.btnLogOut.StateTracking.Border.Width = 0;
+            this.btnLogOut.TabIndex = 17;
+            this.btnLogOut.Values.Text = "Log out";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnKitchen
             // 
-            this.btnKitchen.Location = new System.Drawing.Point(49, 377);
+            this.btnKitchen.Location = new System.Drawing.Point(0, 346);
             this.btnKitchen.Name = "btnKitchen";
             this.btnKitchen.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
             this.btnKitchen.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
@@ -157,7 +158,7 @@
             this.btnKitchen.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnKitchen.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnKitchen.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnKitchen.Size = new System.Drawing.Size(179, 32);
+            this.btnKitchen.Size = new System.Drawing.Size(228, 32);
             this.btnKitchen.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnKitchen.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnKitchen.StateCommon.Back.ColorAngle = 0F;
@@ -169,8 +170,8 @@
             this.btnKitchen.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnKitchen.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnKitchen.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKitchen.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnKitchen.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnKitchen.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnKitchen.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
             this.btnKitchen.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
             this.btnKitchen.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnKitchen.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
@@ -216,81 +217,9 @@
             this.kryptonLabel1.TabIndex = 13;
             this.kryptonLabel1.Values.Text = "RMS";
             // 
-            // btnPOS
-            // 
-            this.btnPOS.Location = new System.Drawing.Point(49, 339);
-            this.btnPOS.Name = "btnPOS";
-            this.btnPOS.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.OverrideDefault.Border.Rounding = 0;
-            this.btnPOS.OverrideDefault.Border.Width = 0;
-            this.btnPOS.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnPOS.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnPOS.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnPOS.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.OverrideFocus.Border.Rounding = 0;
-            this.btnPOS.OverrideFocus.Border.Width = 0;
-            this.btnPOS.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnPOS.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnPOS.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnPOS.Size = new System.Drawing.Size(179, 32);
-            this.btnPOS.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnPOS.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnPOS.StateCommon.Back.ColorAngle = 0F;
-            this.btnPOS.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.StateCommon.Border.Rounding = 0;
-            this.btnPOS.StateCommon.Border.Width = 0;
-            this.btnPOS.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnPOS.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnPOS.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPOS.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnPOS.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnPOS.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.btnPOS.StateNormal.Border.ColorAngle = 0F;
-            this.btnPOS.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.StateNormal.Border.Rounding = 0;
-            this.btnPOS.StateNormal.Border.Width = 0;
-            this.btnPOS.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnPOS.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnPOS.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnPOS.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnPOS.StatePressed.Border.ColorAngle = 0F;
-            this.btnPOS.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.StatePressed.Border.Rounding = 0;
-            this.btnPOS.StatePressed.Border.Width = 0;
-            this.btnPOS.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnPOS.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnPOS.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnPOS.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.btnPOS.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.btnPOS.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnPOS.StateTracking.Border.Rounding = 0;
-            this.btnPOS.StateTracking.Border.Width = 0;
-            this.btnPOS.TabIndex = 12;
-            this.btnPOS.Values.Text = "POS";
-            this.btnPOS.Click += new System.EventHandler(this.btnPOS_Click);
-            // 
             // btnProducts
             // 
-            this.btnProducts.Location = new System.Drawing.Point(49, 301);
+            this.btnProducts.Location = new System.Drawing.Point(0, 270);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
             this.btnProducts.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
@@ -312,7 +241,7 @@
             this.btnProducts.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnProducts.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnProducts.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnProducts.Size = new System.Drawing.Size(179, 32);
+            this.btnProducts.Size = new System.Drawing.Size(228, 32);
             this.btnProducts.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnProducts.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnProducts.StateCommon.Back.ColorAngle = 0F;
@@ -324,8 +253,8 @@
             this.btnProducts.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnProducts.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnProducts.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnProducts.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnProducts.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnProducts.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
             this.btnProducts.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
             this.btnProducts.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnProducts.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
@@ -362,7 +291,7 @@
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(49, 263);
+            this.btnStaff.Location = new System.Drawing.Point(0, 232);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
             this.btnStaff.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
@@ -384,7 +313,7 @@
             this.btnStaff.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnStaff.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnStaff.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnStaff.Size = new System.Drawing.Size(179, 32);
+            this.btnStaff.Size = new System.Drawing.Size(228, 32);
             this.btnStaff.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnStaff.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnStaff.StateCommon.Back.ColorAngle = 0F;
@@ -396,8 +325,8 @@
             this.btnStaff.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnStaff.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnStaff.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaff.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnStaff.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnStaff.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnStaff.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
             this.btnStaff.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
             this.btnStaff.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnStaff.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
@@ -434,7 +363,7 @@
             // 
             // btnTables
             // 
-            this.btnTables.Location = new System.Drawing.Point(49, 225);
+            this.btnTables.Location = new System.Drawing.Point(0, 194);
             this.btnTables.Name = "btnTables";
             this.btnTables.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
             this.btnTables.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
@@ -456,7 +385,7 @@
             this.btnTables.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnTables.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnTables.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnTables.Size = new System.Drawing.Size(179, 32);
+            this.btnTables.Size = new System.Drawing.Size(228, 32);
             this.btnTables.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnTables.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnTables.StateCommon.Back.ColorAngle = 0F;
@@ -468,8 +397,8 @@
             this.btnTables.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnTables.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnTables.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTables.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnTables.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnTables.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnTables.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
             this.btnTables.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
             this.btnTables.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnTables.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
@@ -506,7 +435,7 @@
             // 
             // btnCategories
             // 
-            this.btnCategories.Location = new System.Drawing.Point(49, 187);
+            this.btnCategories.Location = new System.Drawing.Point(0, 156);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
             this.btnCategories.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
@@ -528,7 +457,7 @@
             this.btnCategories.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnCategories.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnCategories.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
-            this.btnCategories.Size = new System.Drawing.Size(179, 32);
+            this.btnCategories.Size = new System.Drawing.Size(228, 32);
             this.btnCategories.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnCategories.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnCategories.StateCommon.Back.ColorAngle = 0F;
@@ -540,8 +469,8 @@
             this.btnCategories.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnCategories.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnCategories.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategories.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.btnCategories.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnCategories.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnCategories.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
             this.btnCategories.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
             this.btnCategories.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.btnCategories.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
@@ -604,14 +533,86 @@
             this.mPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mPanel.Location = new System.Drawing.Point(228, 59);
             this.mPanel.Name = "mPanel";
-            this.mPanel.Size = new System.Drawing.Size(1041, 768);
+            this.mPanel.Size = new System.Drawing.Size(1041, 619);
             this.mPanel.TabIndex = 2;
+            // 
+            // btnOrders
+            // 
+            this.btnOrders.Location = new System.Drawing.Point(0, 308);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.OverrideDefault.Border.Rounding = 0;
+            this.btnOrders.OverrideDefault.Border.Width = 0;
+            this.btnOrders.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnOrders.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnOrders.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnOrders.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.OverrideFocus.Border.Rounding = 0;
+            this.btnOrders.OverrideFocus.Border.Width = 0;
+            this.btnOrders.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnOrders.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnOrders.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnOrders.Size = new System.Drawing.Size(228, 32);
+            this.btnOrders.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.btnOrders.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.btnOrders.StateCommon.Back.ColorAngle = 0F;
+            this.btnOrders.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.StateCommon.Border.Rounding = 0;
+            this.btnOrders.StateCommon.Border.Width = 0;
+            this.btnOrders.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnOrders.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnOrders.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrders.StateDisabled.Back.Color1 = System.Drawing.Color.DimGray;
+            this.btnOrders.StateDisabled.Back.Color2 = System.Drawing.Color.DimGray;
+            this.btnOrders.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnOrders.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.btnOrders.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.btnOrders.StateNormal.Border.ColorAngle = 0F;
+            this.btnOrders.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.StateNormal.Border.Rounding = 0;
+            this.btnOrders.StateNormal.Border.Width = 0;
+            this.btnOrders.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnOrders.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnOrders.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnOrders.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.btnOrders.StatePressed.Border.ColorAngle = 0F;
+            this.btnOrders.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.StatePressed.Border.Rounding = 0;
+            this.btnOrders.StatePressed.Border.Width = 0;
+            this.btnOrders.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnOrders.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnOrders.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Nirmala UI", 14.25F);
+            this.btnOrders.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.btnOrders.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.btnOrders.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnOrders.StateTracking.Border.Rounding = 0;
+            this.btnOrders.StateTracking.Border.Width = 0;
+            this.btnOrders.TabIndex = 18;
+            this.btnOrders.Values.Text = "Orders";
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 827);
+            this.ClientSize = new System.Drawing.Size(1269, 678);
             this.Controls.Add(this.mPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -635,12 +636,12 @@
         private System.Windows.Forms.Panel mPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnTables;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnCategories;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnReports;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnKitchen;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnPOS;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnProducts;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnStaff;
         private System.Windows.Forms.Label labelUsername;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnLogOut;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnOrders;
     }
 }
